@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^3.0.2",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "mongoose": "^5.4.0",
@@ -17,5 +18,13 @@
     "multer": "^1.4.1"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnuRag-18/assessment-focus-phase-soal_hyd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AnuRag-18/assessment-focus-phase-soal_hyd/issues"
+  },
+  "homepage": "https://github.com/AnuRag-18/assessment-focus-phase-soal_hyd#readme",
   "description": ""
 }
