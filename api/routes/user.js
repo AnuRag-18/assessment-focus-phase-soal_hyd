@@ -5,6 +5,7 @@ const bcrypt = require('bcrypt');
 const jwt = require("jsonwebtoken");
 
 const User = require('../models/user');
+const checkAuth = require('../middleware/checkAuth');
 
 router.post('/signup',(req,res,next)=>{
     console.log("user");
@@ -53,7 +54,7 @@ router.post('/signup',(req,res,next)=>{
       }
     });
 });
-router.delete("/:userId", (req, res, next) => {
+router.delete("/:userId",(req, res, next) => {
     User.remove({ _id: req.params.userId })
       .exec()
       .then(result => {
